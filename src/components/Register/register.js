@@ -14,7 +14,7 @@ const Register = ({ onChangeRoute, setLoadUser }) => {
     setSignupName(event.target.value)
   }
   const onSubmitRegister = () => {
-    fetch('http://localhost:3001/register', {
+    fetch('https://glacial-coast-14015.herokuapp.com/register', {
       method: 'post',
       headers: {"Content-Type": "application/json"},
       body: JSON.stringify({

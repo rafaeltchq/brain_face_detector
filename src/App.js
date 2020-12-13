@@ -23,7 +23,7 @@ function App() {
   const inputChange = (event) => setImageUrl(event.target.value);
   const onSubmit = () => {
     setInput(imageUrl)
-    fetch('http://localhost:3001/imageUrl', {
+    fetch('https://glacial-coast-14015.herokuapp.com/imageUrl', {
       method: 'post',
       headers: {"Content-Type": "application/json"},
       body: JSON.stringify({
@@ -36,7 +36,7 @@ function App() {
       setFaceBox(FaceSquareDiv(faceRegion).flat());
       let faceDetected = faceRegion.length;
       if (response) {
-        fetch('http://localhost:3001/image', {
+        fetch('https://glacial-coast-14015.herokuapp.com/image', {
           method: 'put',
           headers: {"Content-Type": "application/json"},
           body: JSON.stringify({
