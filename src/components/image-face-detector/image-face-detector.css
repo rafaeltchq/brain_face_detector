@@ -1,0 +1,19 @@
+.imageDiv {
+    position: relative;
+    max-width: 500px;
+    height: auto;
+    padding: 0;
+}
+.imageDiv div img {
+    /* height: auto; */
+    margin: 0;
+}
+.sqrFaceBox {
+    position: absolute;
+    box-shadow: 0 0 0 3px #149df2 inset;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+}
